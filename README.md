@@ -21,7 +21,8 @@ contract B {
 ### 套利
 WETH/USDC交易对
 监控：
+
     cheap one(WETH price): USDC -> WETH, 监控 (算上手续费)3000USDC in 能拿到多少WETH -> 拿到WETH数量 amountWETH0
     expensive one(WETH price): WETH -> USDC, 监控 (算上手续费)需要多少个WETH in 才能拿到3000个USDC -> 需要的ETH数量 amountWETH1
         
-    amountWETH0 - amountWETH1 - gas 就是利润，赚WETH
+profit = amountWETH0 - amountWETH1 - gas 利润，赚WETH
